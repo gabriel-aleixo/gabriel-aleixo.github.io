@@ -1,0 +1,233 @@
+img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: Roboto;
+    font-style: normal;
+    line-height: normal;
+    margin-top: 2%;
+    margin-bottom: 0%;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: Roboto;
+    font-style: normal;
+    line-height: normal;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+h3{
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: Roboto;
+    font-style: normal;
+    line-height: normal;
+    /* margin-top: 5%;
+    margin-bottom: 5%; */
+}
+
+h4{
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: Roboto;
+    font-style: normal;
+    line-height: normal;
+    margin-top: 0%;
+    margin-bottom: 2%;
+}
+
+p{
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: Roboto;
+    font-style: normal;
+    line-height: normal;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+hr.solid{
+    border-top: 1px solid #bbb;
+    width: 100%;
+}
+
+.box{
+    /* border: 1px solid cadetblue; */
+    /* align-self: center; */
+    /* justify-self: center; */
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1080px;
+    width: 80vw;
+    height: 98vh;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: auto auto auto auto 1fr 6em;
+    grid-template-areas:
+    "head"
+    "title"
+    "feat"
+    "divider"
+    "cont"
+    "foot";
+
+}
+
+
+.header{
+    grid-area: head;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    font-size: 5.5vw;
+    font-weight: 800;
+    font-family: Roboto;
+    font-style: normal;
+    font-variant-caps: small-caps;
+
+}
+
+.hero{
+    grid-area: title;
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+.hero-img{
+    /* border: 1px solid gray; */
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.button{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: Roboto;
+    font-style: normal;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+.button2{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: Roboto;
+    font-style: normal;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+
+.feature{
+    grid-area: feat;
+    display: flex;
+    gap: 5px;
+    padding: 5px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+}
+
+.feature-card{
+    /* border: 1px solid gray; */
+
+    width: 240px;
+    max-height: auto;
+    min-height: 49%;
+}
+
+.feature-img{
+    width: fit-content;
+    height: fit-content;
+
+}
+
+.divider{
+    grid-area: divider;
+    font-variant-caps: small-caps;
+
+}
+.content{
+    grid-area: cont;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content-card{
+    gap: 15px;
+    display: grid;
+    grid-template-columns: 0fr 4fr;
+    grid-template-areas: "img words";
+    align-items: flex-start;
+}
+
+.content-img{
+    grid-area: img;
+    /* max-width: 220px; */
+    /* max-height: 124px; */
+
+}
+
+.content-words{
+    grid-area: words;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-details{
+    font-size: 0.8rem;
+    font-weight: 200;
+    font-family: Roboto;
+    margin-top: 1%;
+
+}
+
+.footer{
+    grid-area: foot;
+    font-variant-caps: small-caps;
+
+}
+
+@media(min-width:1026px){
+    .container {
+        grid-template-columns: 1fr 500px;
+        grid-template-rows: auto auto auto 1fr 60px;
+        grid-template-areas: 
+        "head head"
+        "title feat"
+        "divider divider"
+        "cont cont"
+        "foot foot";
+    }
+    .content-card{
+        gap: 15px;
+        display: grid;
+        grid-template-columns: 1.1fr 4fr;
+        grid-template-areas: "img words";
+        align-items: flex-start;
+    }
+}
