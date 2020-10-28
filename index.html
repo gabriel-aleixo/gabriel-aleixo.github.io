@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Some Handcrafted Blog using Material Design</title>
+    <title>The Great Outdoors Blog</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
 
 </head>
 
@@ -15,20 +15,20 @@
         <div class="container">
             <div class="header box" id="header">The Great Outdoors</div>
             <div class="hero box" id="hero">
-                <div class="hero-img"><img src="/images/hero-img.jpg"></div>
+                <div class="hero-img"><a href="/blog-post.html"><img src="/images/hero-img.jpg" alt="big rocky mountains"></a></div>
                 <div class="hero-title">
-                    <h1>Hero Title</h1>
+                    <h1><a href="/blog-post.html">Hero Title</a></h1>
                 </div>
                 <div class="hero-text">
-                    <p>Mussum Ipsum, cacilds vidis litro abertis. Delegadis gente finis, bibendum egestas augue arcu ut
+                    <p><a href="/blog-post.html">Mussum Ipsum, cacilds vidis litro abertis. Delegadis gente finis, bibendum egestas augue arcu ut
                         est. Mais vale um bebadis conhecidiss, que um alcoolatra anonimis. Vehicula non. Ut sed ex eros.
-                        Vivamus sit amet nibh non tellus tristique interdum. Paisis, filhis, espiritis santis.</p>
+                        Vivamus sit amet nibh non tellus tristique interdum. Paisis, filhis, espiritis santis</a>.</p>
                 </div>
-                <div class="button">Click here</div>
+                <div class="button"><a href="/blog-post.html">Click here</a></div>
             </div>
             <div class="feature box" id="feature">
                 <div class="feature-card">
-                    <div class="feature-img"><img src="/images/feature-1.jpg"></div>
+                    <div class="feature-img"><img src="/images/feature-1.jpg" alt="snowy valley"></div>
                     <div class="feature-title">
                         <h3>Title not so long</h3>
                     </div>
@@ -38,7 +38,7 @@
                     <div class="button">Button</div>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-img"><img src="/images/feature-2.jpg"></div>
+                    <div class="feature-img"><img src="/images/feature-2.jpg" alt="beach sunset"></div>
                     <div class="feature-title">
                         <h3>Feature Title not so long</h3>
                     </div>
@@ -48,7 +48,7 @@
                     <div class="button">Button</div>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-img"><img src="/images/feature-3.jpg"></div>
+                    <div class="feature-img"><img src="/images/feature-3.jpg" alt="sandy beach"></div>
                     <div class="feature-title">
                         <h3>Title a tiny little bit longer</h3>
                     </div>
@@ -58,7 +58,7 @@
                     <div class="button">Button</div>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-img"><img src="/images/feature-4.jpg"></div>
+                    <div class="feature-img"><img src="/images/feature-4.jpg" alt="sunny valley"></div>
                     <div class="feature-title">
                         <h3>Slightly longer Feature Title with more words</h3>
                     </div>
@@ -74,7 +74,7 @@
             </div>
             <div class="content box" id="content">
                 <div class="content-card">
-                    <div class="content-img"><img src="/images/feature-4.jpg"></div>
+                    <div class="content-img"><img src="/images/feature-4.jpg" alt="sunny valley"></div>
                     <div class="content-words">
                         <div class="content-title">
                             <h4>Slightly longer Feature Title with more words</h4>
@@ -89,7 +89,7 @@
                     </div>
                 </div>
                 <div class="content-card">
-                    <div class="content-img"><img src="/images/feature-4.jpg"></div>
+                    <div class="content-img"><img src="/images/feature-4.jpg" alt="sunny valley"></div>
                     <div class="content-words">
                         <div class="content-title">
                             <h4>Slightly longer Feature Title with more words</h4>
@@ -105,7 +105,7 @@
                     </div>
                 </div>
                 <div class="content-card">
-                    <div class="content-img"><img src="/images/feature-4.jpg"></div>
+                    <div class="content-img"><img src="/images/feature-4.jpg" alt="sunny valley"></div>
                     <div class="content-words">
                         <div class="content-title">
                             <h4>Slightly longer Feature Title with more words</h4>
@@ -121,19 +121,31 @@
                     </div>
                 </div>
             </div>
+            <div class="form">
+                <form action="" method="POST" class="subscribe-form">
+                    <div class="form-items">
+                        <label class="form-items" for="email">Lets's stay in touch</label>
+                        <input class="email" type="email" placeholder="my@email.com" name="email" id="email" required>
+                        <input class="submit" type="submit" value="subscribe" name="submit" id="submit">
+                    </div>
+                </form>
+            </div>
             <div class="footer">
-                <hr class="solid">
-                <h3>Links</h3>
-                <ul>
-                    <li>
-                    <a href="https://www.google.com">Link 1</a>
-                    </li>
-                    <li>
-                        <a href="https://www.google.com">Link 2</a>
-                        </li>                    <li>
+                <footer>
+                    <hr class="solid">
+                    <h3>Links</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.google.com">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="https://www.google.com">Link 2</a>
+                        </li>
+                        <li>
                             <a href="https://www.google.com">Link 3</a>
-                            </li>
-                </ul>
+                        </li>
+                    </ul>
+                </footer>
             </div>
         </div>
     </div>
