@@ -1,0 +1,14 @@
+.form{
+    grid-area: form;
+    background-color: antiquewhite;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.form-items{
+    margin: 10px;
+    text-align: center;
+
+}

@@ -81,6 +81,14 @@ strong{
     font-weight: bold;
 }
 
+u {
+    text-decoration: #f00 wavy underline;
+}
+
+em{
+    font-weight: bolder;
+}
+
 ul{
     list-style-type: none;
     font-size: 1rem;

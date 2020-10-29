@@ -1,0 +1,19 @@
+.navigation{
+    background-color: antiquewhite;
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+.nav-link{
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: Roboto;
+    font-style: normal;
+    margin-top: 0%;
+    margin-bottom: 0%;
+
+}
