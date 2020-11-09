@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/fontawesome-free-5.15.1-web/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/lib/jquery.js"></script>
+    <script src="/lib/main.js"></script>
 
 </head>
 
@@ -71,7 +72,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr class="has-background-grey-lighter">
+                                    <tr class="has-background-primary">
                                         <td class="is-narrow">
                                             <span class="icon "><i class="fa fa-user"></i></span>
                                         </td>
@@ -321,7 +322,7 @@
 
 
                                     </div>
-                                    <div class="panel is-hidden" id="meeting-card-body-notes-edit">
+                                    <!-- <div class="panel is-hidden" id="meeting-card-body-notes-edit">
                                         <div class="panel-heading">
                                             <div class="level is-mobile">
                                                 <div class="level-left">
@@ -378,13 +379,236 @@
                                         </div>
 
 
+                                    </div> -->
+                                    <div class="is-hidden" id="meeting-card-body-notes">                                       
+                                        <div class="block">
+                                            <div class="level is-mobile">
+                                                <div class="level-left">
+                                                    <div class="level-item">
+                                                        <div class="title is-4">Take Notes</div>
+                                                    </div>
+                                                </div>
+                                                <div class="level-right">
+                                                    <div class="level-item">
+                                                        <button
+                                                            class="button is-success is-small is-pulled-right" id="meeting-card-body-notes-button-save">Save</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="block">
+                                            <table class="table is-fullwidth">
+                                                <tbody>
+                                                    <tr>
+                                                        <td><span class="icon has-text-success">
+                                                            <i class="fas fa-check"></i>
+                                                        </span></td>
+                                                        <td>Morale today? Why?</td>
+                                                        <td>
+                                                            <span class="icon">
+                                                                <i class="fas fa-tasks"></i>
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="icon">
+                                                                <i class="fas fa-thumbtack"></i>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span class="icon has-text-success">
+                                                            <i class="fas fa-check"></i>
+                                                        </span></td>
+                                                        <td>Discuss Carreer Goals & Reality</td>
+                                                        <td>
+                                                            <span class="icon">
+                                                                <i class="fas fa-tasks"></i>
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="icon">
+                                                                <i class="fas fa-thumbtack"></i>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="icon has-text-grey-light">
+                                                            <i class="fas fa-check"></i>
+                                                        </span></td>
+                                                        <td>Give Feedback</td>
+                                                        <td>
+                                                            <span class="icon">
+                                                                <i class="fas fa-tasks"></i>
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="icon">
+                                                                <i class="fas fa-thumbtack"></i>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="icon has-text-grey-light">
+                                                            <i class="fas fa-check"></i>
+                                                        </span></td>
+                                                        <td>Request Feedback</td>
+                                                        <td>
+                                                            <span class="icon">
+                                                                <i class="fas fa-tasks"></i>
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="icon">
+                                                                <i class="fas fa-thumbtack"></i>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="icon has-text-grey-light">
+                                                            <i class="fas fa-check"></i>
+                                                        </span></td>
+                                                        <td>Monitor & Review objectices</td>
+                                                        <td>
+                                                            <span class="icon">
+                                                                <i class="fas fa-tasks"></i>
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="icon">
+                                                                <i class="fas fa-thumbtack"></i>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="icon has-text-grey-light">
+                                                            <i class="fas fa-check"></i>
+                                                        </span></td>
+                                                        <td>Review Top 3 Priorities</td>
+                                                        <td>
+                                                            <span class="icon">
+                                                                <i class="fas fa-tasks"></i>
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="icon">
+                                                                <i class="fas fa-thumbtack"></i>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="icon has-text-grey-light">
+                                                            <i class="fas fa-check"></i>
+                                                        </span></td>
+                                                        <td>Check barriers & blockers</td>
+                                                        <td>
+                                                            <span class="icon">
+                                                                <i class="fas fa-tasks"></i>
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="icon">
+                                                                <i class="fas fa-thumbtack"></i>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="icon has-text-grey-light">
+                                                            <i class="fas fa-check"></i>
+                                                        </span></td>
+                                                        <td>Review past blockers</td>
+                                                        <td>
+                                                            <span class="icon">
+                                                                <i class="fas fa-tasks"></i>
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="icon">
+                                                                <i class="fas fa-thumbtack"></i>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="icon has-text-grey-light">
+                                                            <i class="fas fa-check"></i>
+                                                        </span></td>
+                                                        <td>Recently Achieve Milestones</td>
+                                                        <td>
+                                                            <span class="icon">
+                                                                <i class="fas fa-tasks"></i>
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="icon">
+                                                                <i class="fas fa-thumbtack"></i>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="icon has-text-grey-light">
+                                                            <i class="fas fa-check"></i>
+                                                        </span></td>
+                                                        <td>Define KPIs</td>
+                                                        <td>
+                                                            <span class="icon">
+                                                                <i class="fas fa-tasks"></i>
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="icon">
+                                                                <i class="fas fa-thumbtack"></i>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="icon has-text-grey-light">
+                                                            <i class="fas fa-check"></i>
+                                                        </span></td>
+                                                        <td>Team Culture & Openness</td>
+                                                        <td>
+                                                            <span class="icon">
+                                                                <i class="fas fa-tasks"></i>
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="icon">
+                                                                <i class="fas fa-thumbtack"></i>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="icon has-text-grey-light">
+                                                            <i class="fas fa-check"></i>
+                                                        </span></td>
+                                                        <td>Working Together</td>
+                                                        <td>
+                                                            <span class="icon">
+                                                                <i class="fas fa-tasks"></i>
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="icon">
+                                                                <i class="fas fa-thumbtack"></i>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+
+                                            </table>
+
+                                        </div>
+
+
                                     </div>
+
                                 </div>
                             </div>
 
                         </div>
-                    </div>
-
+                    </div>                      
+                
                 </div>
                 <div class="column is-two-fifths is-hidden-mobile" id="right-bar">
                     <div class="sticky-top">
@@ -393,7 +617,10 @@
                                 <div class="level is-mobile">
                                     <div class="level-left">
                                         <div class="level-item">
-                                            📓&nbsp&nbsp1:1 Workbook
+                                            <span class="icon">
+                                                <i class="fas fa-book"></i>
+                                            </span>
+                                            &nbsp1:1 Workbook
                                         </div>
 
                                     </div>
@@ -449,7 +676,10 @@
                                 <div class="level is-mobile">
                                     <div class="level-left">
                                         <div class="level-item">
-                                            ✅&nbsp&nbspAction Items
+                                            <span class="icon">
+                                                <i class="fas fa-tasks"></i>
+                                            </span>
+                                            &nbspAction Items
                                         </div>
 
                                     </div>
@@ -482,6 +712,42 @@
                                 <input type="checkbox">
                                 remember me
                             </label>
+
+
+                        </div>
+                        <div class="panel" id="logged-items-panel">
+                            <div class="panel-heading">
+                                <div class="level is-mobile">
+                                    <div class="level-left">
+                                        <div class="level-item">
+                                            <span class="icon">
+                                                <i class="fas fa-thumbtack"></i>
+                                            </span>
+                                            &nbspLogged Items
+                                        </div>
+
+                                    </div>
+                                    <a class="level-right has-text-black">
+                                        <div class="level-item" id="logged-items-panel-angle">
+                                            <span class="icon">
+                                                <i class="fas fa-angle-up" id="logged-items-panel-angle-icon"></i>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <label class="panel-block">
+                                <div class="control has-icons-left">
+                                    <input class="input" type="text" placeholder="log new item">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-plus"></i>
+                                    </span></div>
+                            </label>
+
+                            <span class="panel-block">Logged decision or outcome during meeting XHYZ</span>
+                            <span class="panel-block">Logged decision or outcome during meeting XHYZ</span>
+                            <span class="panel-block">Logged decision or outcome during meeting XHYZ</span>
+                            <span class="panel-block">Logged decision or outcome during meeting XHYZ</span>
 
 
                         </div>
