@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link href="styles.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lato&display=swap" rel="stylesheet">
+        <title>Gabe's Webpage</title>
+    </head>
+    <body class="container bg-dark text-light">
+        <header class="border-bottom border-light">
+            <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-dark">
+                <div class="container-fluid">
+                    <div class="navbar-brand"></div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html">About me</a>
+                            </li>                            <li class="nav-item">
+                                <a class="nav-link" href="./see.html">See Stuff</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./something.html">Something else</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="d-flex flex-column justify-content-center container-md px-4 py-5 text-center vh-100">
+                <h1 class="display-1 w-bold mb-4">Welcome to Gabe's Webpage</h1>
+                <h3 class="display-6 mb-5">This is CS50x Problem Set 8 Project</h3>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <a class="btn btn-info btn-lg px-4 gap-3" href="https://github.com/gabriel-aleixo" target="blank">Source code</a>
+                    <a class="btn btn-outline-info btn-lg px-4" href="https://cs50.harvard.edu/" target="blank">CS50x</a>
+                </div>
+
+            </div>
+        </header>
+        <main class="container-sm mb-5">
+            <section class="m-4 py-5 border-bottom border-light">
+                <div class="card text-bg-dark border-dark p-4">
+                    <div class="card-body">
+                        <h2 class="card-title h2">What is this?</h2>
+                        <div class="card-text text-lg">
+                            <p>This is a website built with HTML, CSS, Javascript and Bootstrap for the problem set 8 of CS50x course.</p>
+                        </div>
+                        <a href="#" class="btn btn-outline-info my-4">This is a button</a>
+                    </div>
+                </div>
+            </section>
+            <section class="m-4 py-5 border-bottom border-light">
+                <div class="card text-bg-dark border-dark  p-4">
+                    <div class="card-body">
+                        <h2 class="card-title h2">And how about that?</h2>
+                        <div class="card-text">
+                            <p>This is just an example of some card that could be placed in the homepage.</p>
+                            <p>In this case, this card links to the About poage</p>
+                        </div>
+                        <a href="./about.html" class="btn btn-outline-info my-4">About me</a>
+                    </div>
+                </div>
+            </section>
+            <section class="m-4 py-5">
+                <div class="card text-bg-dark border-dark  p-4">
+                    <div class="card-body">
+                        <h2 class="card-title h2">What, there's more?</h2>
+                        <div class="card-text">
+                            <p>Not really.</p>
+                            <p>I'm just repeating the same element to have an idea of how the layout would render.</p>
+                            <p>Since we're here, I might as well link to some of my photos.</p>
+                        </div>
+                        <a href="./see.html" class="btn btn-outline-info my-4">See Stuff</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top border-light">
+            <div class="col-md-4 d-flex align-items-center">
+                <a class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1" href="https://gabrielaleixo.com" target="blank">
+                    Gabriel Aleixo
+                    <span class="fs-6"><i class="bi bi-c-circle"></i></span>
+                    2022
+                </a>
+            </div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex fs-4">
+                <li class="ms-3">
+                    <a class="text-muted">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    </body>
+</html>

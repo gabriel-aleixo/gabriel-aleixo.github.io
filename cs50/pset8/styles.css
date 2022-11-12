@@ -1,0 +1,57 @@
+/* Need five different selectors */
+
+.display-1 {
+    font-family: 'Fredoka One', cursive;
+    background: linear-gradient(
+        85deg,
+        hsl(193deg 91% 50%) 0%,
+        hsl(196deg 100% 50%) 2%,
+        hsl(204deg 100% 61%) 5%,
+        hsl(217deg 100% 70%) 10%,
+        hsl(241deg 100% 79%) 17%,
+        hsl(270deg 92% 74%) 25%,
+        hsl(298deg 68% 64%) 34%,
+        hsl(318deg 94% 63%) 44%,
+        hsl(326deg 100% 55%) 55%,
+        hsl(334deg 100% 50%) 68%,
+        hsl(345deg 100% 50%) 83%,
+        hsl(0deg 100% 50%) 100%
+        /* -45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab */
+        );
+    background-size: 200% 200%;
+    animation: gradient 5s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.display-6 {
+    font-family: 'Lato', sans-serif;
+    color: #0BC1F3;
+}
+
+.h2 {
+    color: #F7B538;
+}
+
+.carousel-inner {
+    aspect-ratio: 4 /3;
+}
+
+main {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+}
+

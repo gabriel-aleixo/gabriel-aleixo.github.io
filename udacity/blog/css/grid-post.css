@@ -1,0 +1,18 @@
+.container {
+    margin: 0 auto;
+    max-width: 1080px;
+    width: 80vw;
+    height: 98vh;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: auto auto auto auto auto 1fr auto auto;
+    grid-template-areas:
+    "head"
+    "nav"
+    "title"
+    "divider"
+    "cont"
+    "info"
+    "form"
+    "foot";
+}
